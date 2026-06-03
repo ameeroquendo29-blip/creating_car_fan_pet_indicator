@@ -11,3 +11,7 @@ class Fan:
 
     def get_speed(self):
         return self.__speed
+
+    def set_speed(self, speed):
+        if speed in [Fan.SLOW, Fan.MEDIUM, Fan.FAST]:
+            self.__speed = speed
