@@ -11,4 +11,7 @@ class Car:
         self.__speed -= 5 #decrease speed when called
         if self.__speed < 0: self.__speed = 0
 
+    def get_speed(self):
+        return self.__speed
+
     
