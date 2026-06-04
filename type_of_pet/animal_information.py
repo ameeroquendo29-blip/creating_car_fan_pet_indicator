@@ -9,4 +9,14 @@ class AnimalInformation:
         name = input("Enter pet name: ")
         animal_type = input("Enter animal type (ex., Dog, Cat, Bird): ")
 
+        while True:
+            try:
+                age = int(input("Enter pet age: "))
+                if age < 0:
+                    print("Age cannot be negative.")
+                    continue
+                break
+            except ValueError:
+                print("Please enter a valid whole number for age.")
+
         
