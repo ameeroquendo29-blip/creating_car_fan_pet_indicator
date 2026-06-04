@@ -19,4 +19,6 @@ class AnimalInformation:
             except ValueError:
                 print("Please enter a valid whole number for age.")
 
-        
+        self.pet_info.set_name(name)
+        self.pet_info.set_animal_type(animal_type)
+        self.pet_info.set_age(age)
