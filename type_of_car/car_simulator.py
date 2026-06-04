@@ -11,7 +11,7 @@ class CarSimulator:
             self.my_car.accelerate()
             print(f"  Stomp {stomp}: Speed is now {self.my_car.get_speed()} km/h")
 
-        print("\n[Action] Applying Brakes...")
+        print("\nApplying Brakes...")
         for step in range(1, 6):
             self.my_car.brake()
             print(f"  Step {step}: Speed is now {self.my_car.get_speed()} km/h")
