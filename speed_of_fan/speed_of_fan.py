@@ -15,10 +15,15 @@ class Fan:
     def set_speed(self, speed):
         if speed in [Fan.SLOW, Fan.MEDIUM, Fan.FAST]:
             self.__speed = speed
-
     # On/Off State
     def is_on(self):
         return self.__on
 
     def set_on(self, on):
         self.__on = bool(on)
+    # Radius
+    def get_radius(self):
+        return self.__radius
+
+    def set_radius(self, radius):
+        self.__radius = float(radius)
