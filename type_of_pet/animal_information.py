@@ -13,11 +13,11 @@ class AnimalInformation:
             try:
                 age = int(input("Enter pet age: "))
                 if age < 0:
-                    print("Age cannot be negative.")
+                    print(f"Age cannot be negative.")
                     continue
                 break
             except ValueError:
-                print("Please enter a valid whole number for age.")
+                print(f"Please enter a valid whole number for age.")
 
         self.pet_info.set_name(name)
         self.pet_info.set_animal_type(animal_type)
@@ -25,10 +25,14 @@ class AnimalInformation:
 
     def display_pet_data(self):
         print("\n--- Displaying Pet Details ---")
-        print(f"Name:        {self.pet_object.get_name()}")
-        print(f"Animal Type: {self.pet_object.get_animal_type()}")
-        print(f"Age:         {self.pet_object.get_age()} years old")
+        print(f"Name:        {self.pet_info.get_name()}")
+        print(f"Animal Type: {self.pet_info.get_animal_type()}")
+        print(f"Age:         {self.pet_info.get_age()} years old")
 
     def run(self):
         self.collect_pet_data()
         self.display_pet_data()
+
+if __name__ == "__main__":
+    program = AnimalInformation()
+    program.run()
