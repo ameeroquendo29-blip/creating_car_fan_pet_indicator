@@ -7,4 +7,7 @@ class CarSimulator:
     def test_run(self):
         print(" Starting test run for {self.my_car.get_year_model()} {self.my_car.get_make()}")
         print("\nAccelerating....")
-        
+        for stomp in range(1, 6):
+            self.my_car.accelerate()
+            print(f"  Stomp {stomp}: Speed is now {self.my_car.get_speed()} km/h")
+            
