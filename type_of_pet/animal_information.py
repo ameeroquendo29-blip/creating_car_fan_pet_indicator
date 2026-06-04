@@ -22,3 +22,13 @@ class AnimalInformation:
         self.pet_info.set_name(name)
         self.pet_info.set_animal_type(animal_type)
         self.pet_info.set_age(age)
+
+    def display_pet_data(self):
+        print("\n--- Displaying Pet Details ---")
+        print(f"Name:        {self.pet_object.get_name()}")
+        print(f"Animal Type: {self.pet_object.get_animal_type()}")
+        print(f"Age:         {self.pet_object.get_age()} years old")
+
+    def run(self):
+        self.collect_pet_data()
+        self.display_pet_data()
