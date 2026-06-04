@@ -10,4 +10,9 @@ class CarSimulator:
         for stomp in range(1, 6):
             self.my_car.accelerate()
             print(f"  Stomp {stomp}: Speed is now {self.my_car.get_speed()} km/h")
-            
+
+        print("\nTest run complete....")
+
+def simulation():
+    simulation = CarSimulator("2024", "Toyota")
+    simulation.test_run()
