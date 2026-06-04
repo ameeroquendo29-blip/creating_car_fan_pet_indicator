@@ -8,10 +8,17 @@ class Fan:
         self.__radius = float(radius)
         self.__color = str(color)
         self.__on = bool(on)
-
+    #Speed
     def get_speed(self):
         return self.__speed
 
     def set_speed(self, speed):
         if speed in [Fan.SLOW, Fan.MEDIUM, Fan.FAST]:
             self.__speed = speed
+
+    # On/Off State
+    def is_on(self):
+        return self.__on
+
+    def set_on(self, on):
+        self.__on = bool(on)
